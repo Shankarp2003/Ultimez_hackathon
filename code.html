@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimez</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            min-height: 100vh;
+        }
+        nav {
+            background-color: #2196F3;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+        }
+        nav h1 {
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            flex-grow: 1;
+            margin-bottom: 20px;
+        }
+        .left-box {
+            background-color: #fff; /* White background */
+            color: #000; /* Black text color */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 30%; /* Adjust the width based on your preference */
+            box-sizing: border-box;
+        }
+        .info-box {
+            background-color: #e0e0e0; /* Light gray background */
+            padding: 10px;
+            border-radius: 4px;
+            margin-top: 20px; /* Add space between the "TELL US EVERYTHING" text and the box */
+        }
+        form {
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 60%; /* Adjust the width based on your preference */
+            box-sizing: border-box;
+        }
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        button {
+            background-color: #2196F3; /* Blue color */
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .form-group {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .form-group label {
+            width: 100px; /* Adjust width based on your preference */
+        }
+        .form-group input {
+            flex: 1;
+        }
+        img {
+            width: 100%; /* Make the image fill the container width */
+            max-height: 400px; /* Set a maximum height if needed */
+            object-fit: cover; /* Ensure the image covers the container */
+            border-radius: 8px;
+            margin-top: 20px; /* Add space between the form and the image */
+        }
+        footer {
+            background-color: #2196F3; /* Blue background for the footer */
+            color: #fff; /* White text color */
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .footer-content {
+            width: 50%;
+            text-align: left;
+        }
+        .vertical-line {
+            height: 50px; /* Adjust the height based on your preference */
+            width: 2px;
+            background-color: #fff; /* White color for the vertical line */
+            margin: 0 20px; /* Add space around the vertical line */
+        }
+        .footer-text {
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>Ultimez</h1>
+        <div>
+            <a href="#">Home</a>
+            <a href="#">Who we are</a>
+            <a href="#">Solutions</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Case Studies</a>
+            <a href="#">Careers</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="left-box">
+            <p style="color: black;">TELL US<br> EVERY- THING</p>
+            <div class="info-box">
+                <p>Our Business Philosophy<br>
+                We strive to unlock collective wisdom and<br>
+                go beyond what's possible to grow together.</p>
+            </div>
+        </div>
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="country">Country:</label>
+                <input type="text" id="country" name="country" required>
+            </div>
+
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" required>
+
+                <label for="company">Company Name:</label>
+                <input type="text" id="company" name="company" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <img src="path/to/your/image.jpg" alt="Description of the image">
+    <footer>
+        <div class="footer-content">
+            <p>Lets Build The Future Together</p>
+            <p>Ultimez Technology, Industry Specific Software, Designing and Branding Solutions, Globally</p>
+        </div>
+        <div class="vertical-line"></div>
+        <div class="footer-text">
+            <p>Your additional text here</p>
+        </div>
+    </footer>
+</body>
+</html>
